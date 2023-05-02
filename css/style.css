@@ -101,32 +101,24 @@
     left: 64%;
 }
 
-.hero__info-distance-item {
+.hero__info-distance {
     position: absolute;
-    display: inline-block;
+    box-sizing: border-box;
+
+    height: 110px;
+
     top: 31px;
     left: 1220px;
-    padding: 14px 28px;
 
+    padding: 46px 60px 14px 26px;
+    
     background: #EF8964;
     border-radius: 12px;
 }
 
-.hero__info-distance-item > svg {
-    margin-bottom: 8px;
-
-    padding: 4px;
-    background-color: #EFA082;
-    border-radius: 90%;
-    /*background: none;*/
-}
-
-.hero__info-distance-description {
-    background: none;
-}
-
 .hero__info-distance-number {
-    display: inline-block;
+    position: relative;
+    
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
@@ -137,7 +129,20 @@
     background: none;
 }
 
-.hero__info-distance-number::after{
+.hero__info-distance-number::before {
+    content: "";
+
+    position: absolute;
+    bottom: 62px;
+    left: 4px;
+
+    width: 16px;
+    height: 16px;
+    background: url(../img/runner.svg);
+    background-size: 16px 16px;
+}
+
+.hero__info-distance-number::after {
     content: "km";
     margin-left: 9px;
     
@@ -153,10 +158,6 @@
     background: none;
 
 }
-
-/*.hero__info-distance-measure {
-    display: inline-block;
-}*/
 
 .hero__info-tutorial {
     position: absolute;
