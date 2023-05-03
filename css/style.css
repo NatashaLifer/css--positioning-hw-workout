@@ -37,7 +37,7 @@
     line-height: 15px;
 }
 
-.navigation__menu-item:hover {
+.navigation__menu-link:hover {
     text-decoration: underline;
 }
 
